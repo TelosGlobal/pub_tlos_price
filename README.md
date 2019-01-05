@@ -1,7 +1,8 @@
 # pub_tlos_price
 Publish the current TLOS price
 
-## Requirement
+## Requirements
+CryptoCompare API Key (See 
 
 ## OVERVIEW
 1.  First, we create a new permission "ACCOUNT/claimer" with a unique KEY
@@ -22,5 +23,5 @@ Publish the current TLOS price
 1.  Create new EOS KEY Pair (there are many ways to do this).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NTE3MzgxNF19
+eyJoaXN0b3J5IjpbLTE3NjYzOTU3NzldfQ==
 -->
