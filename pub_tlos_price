@@ -16,13 +16,13 @@ returnString = json.loads(resp.text)
 tprice = returnString['data'][0]['last']
 
 #Get EOS Price 
-resp = requests.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=EOS&tsyms=USD&api_key=',apiKey)
+resp = requests.get('https://min-api.cryptocompare.com/data/price?fsym=EOS&tsyms=USD&api_key=',apiKey)
 if resp.status_code != 200:
     # This means something went wrong.
     raise ApiError('GET /tasks/ {}'.format(resp.status_code))
 #print(resp.json())
 returnString = json.loads(resp.text)
-eprice = returnString['EOS']['USD']
+eprice = returnString['USD']
 tlosPrice = eprice * tprice
 
 #Print prices
