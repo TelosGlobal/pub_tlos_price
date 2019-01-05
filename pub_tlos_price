@@ -1,0 +1,31 @@
+#/var/python
+
+import requests
+import json
+
+#CryptoCompare API Key
+apiKey = "<YOUR_API_KEY>"
+
+#Get TLOS/EOS pair price
+resp = requests.get('https://api.chainrift.com/v1/Public/Market?symbol=TLOS/EOS')
+if resp.status_code != 200:
+    # This means something went wrong.
+    raise ApiError('GET /tasks/ {}'.format(resp.status_code))
+#print(resp.json())
+returnString = json.loads(resp.text)
+tprice = returnString['data'][0]['last']
+
+#Get EOS Price 
+resp = requests.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=EOS&tsyms=USD&api_key=',apiKey)
+if resp.status_code != 200:
+    # This means something went wrong.
+    raise ApiError('GET /tasks/ {}'.format(resp.status_code))
+#print(resp.json())
+returnString = json.loads(resp.text)
+eprice = returnString['EOS']['USD']
+tlosPrice = eprice * tprice
+
+#Print prices
+print("TLOS/EOS Pair: ${0:.2f}".format(tprice))
+print(" EOS Price:    ${0:.2f}".format(eprice))
+print("TLOS Price:    ${0:.2f}".format(tlosPrice))
