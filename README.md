@@ -14,6 +14,10 @@ Python script that grabs the current TLOS/EOS pair price from ChainRift, then gr
 ## Installation
 1.  Copy pub_tlos_price.py script to a local directory
 
+## Run Script
+1.  From the command prompt, type:
+		`python pub_telos_price.py`
+		
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEwODAzMTYxLC0xNzY2Mzk1Nzc5XX0=
+eyJoaXN0b3J5IjpbMTg4MjIwNzEyOCwtMTc2NjM5NTc3OV19
 -->
