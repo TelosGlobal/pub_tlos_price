@@ -2,9 +2,9 @@
 Publish the current TLOS price
 
 ## Requirements
-CryptoCompare API Key (See 
+CryptoCompare API Key (See [docs](https://min-api.cryptocompare.com/documentation))
 
-## OVERVIEW
+## Overview
 1.  First, we create a new permission "ACCOUNT/claimer" with a unique KEY
 
 - This unique key will only be allowed to claim tokens to YOUR account.  This way, if they key gets compromised it will do little or argueably "no" harm.
@@ -23,5 +23,5 @@ CryptoCompare API Key (See
 1.  Create new EOS KEY Pair (there are many ways to do this).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjYzOTU3NzldfQ==
+eyJoaXN0b3J5IjpbMjAxOTI1NTgwMiwtMTc2NjM5NTc3OV19
 -->
