@@ -5,7 +5,7 @@ Publish the current TLOS price
 CryptoCompare API Key (See [docs](https://min-api.cryptocompare.com/documentation))
 
 ## Overview
-1.  First, we create a new permission "ACCOUNT/claimer" with a unique KEY
+Python script that grabs the current TLOS/EOS pair price from Chainrift, then grabs the current EOS price from CryptoCompare (via unique API key), then prints all three prices:
 
 - This unique key will only be allowed to claim tokens to YOUR account.  This way, if they key gets compromised it will do little or argueably "no" harm.
 
@@ -23,5 +23,6 @@ CryptoCompare API Key (See [docs](https://min-api.cryptocompare.com/documentatio
 1.  Create new EOS KEY Pair (there are many ways to do this).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTI1NTgwMiwtMTc2NjM5NTc3OV19
+eyJoaXN0b3J5IjpbLTIwNDQ3NDE5OTYsLTE3NjYzOTU3NzldfQ
+==
 -->
